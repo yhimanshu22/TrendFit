@@ -2,28 +2,31 @@
 # https://github.com/firebase/firebase-tools
 
 name: Deploy to Firebase Hosting on merge
+
 on:
   push:
     branches:
       - main
+
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
+    
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-
+        
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
           node-version: '14'
-
+          
       - name: Install dependencies
         run: yarn install
-
+        
       - name: Build Next.js application
         run: yarn build
-
+        
       - name: Deploy to Firebase Hosting
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
