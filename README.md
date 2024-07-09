@@ -35,4 +35,13 @@ To run this Next.js app locally, follow these steps:
 - **Wishlist and Comparison:** Allow users to save products and compare multiple items.
 - **Enhanced Checkout:** Streamline checkout with guest checkout, address autofill, and order tracking.
 
+## Stack Used
+
+- **Next.js:** Framework for building React applications with server-side rendering and static site generation capabilities.
+- **Firebase:** Database and storage solution provided by Google.
+  - **Firestore:** NoSQL database within Firebase used for scalable, flexible data storage.
+  - **Storage:** Firebase service for storing user-generated content like images, videos, and other files.
+- **Google Auth:** Authentication service provided by Google for user sign-in and sign-up.
+  - **Passwordless Sign-In/Sign-Up:** Authentication method allowing users to sign in or sign up without passwords, typically using email or phone number verification.
+
      
