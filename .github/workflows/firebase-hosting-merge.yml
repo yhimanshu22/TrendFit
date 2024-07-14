@@ -16,7 +16,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '14'  # Ensure compatibility with Firebase CLI version 11
+          node-version: '20'  # Ensure compatibility with Firebase CLI version 11
 
       - name: Set Node.js options
         run: export NODE_OPTIONS=--openssl-legacy-provider
@@ -28,7 +28,7 @@ jobs:
         run: yarn run build
 
       - name: Upgrade Firebase CLI
-        run: npm install -g firebase-tools@11  # Install Firebase CLI version 11
+        run: npm install -g firebase-tools@13  # Install Firebase CLI version 11
 
       - name: Deploy to Firebase Hosting
         uses: FirebaseExtended/action-hosting-deploy@v0
