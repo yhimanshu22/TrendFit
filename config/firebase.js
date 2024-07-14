@@ -1,16 +1,12 @@
 import firebase from "firebase";
 
-export const firebaseConfig = {
-  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
-  authDomain: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID + ".firebaseapp.com",
-  databaseURL:
-    "https://" +
-    process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID +
-    ".firebaseio.com",
-  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
-  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID + ".appspot.com",
+const firebaseConfig = {
+  apiKey: "AIzaSyBHhA3o08Nk4GScmhIKykyVAl5XSjJS2Uw",
+  authDomain: "e-commerce-99426.firebaseapp.com",
+  projectId: "e-commerce-99426",
+  storageBucket: "e-commerce-99426.appspot.com",
   messagingSenderId: "337065238039",
-  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
+  appId: "1:337065238039:web:eea59da09008569f6f4652"
 };
 
 try {
