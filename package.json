@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "build": "next build --openssl-legacy-provider build",
+    "start": "next start --openssl-legacy-provider build"
   },
   "dependencies": {
     "@hookform/resolvers": "^1.0.0",
