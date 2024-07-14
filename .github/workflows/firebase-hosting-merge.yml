@@ -9,7 +9,7 @@ on:
 
 jobs:
   build_and_deploy:
-    runs-on: 16-alpine
+    runs-on: ubuntu-latest
     
     steps:
       - name: Checkout repository
@@ -18,7 +18,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '17'
+          node-version: '14'
       
       - name: Set Node.js options
         run: export NODE_OPTIONS=--openssl-legacy-provider
