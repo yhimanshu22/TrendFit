@@ -16,7 +16,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '17'  # Use a stable LTS version like 14.x or 16.x
+          node-version: '14'  # Use a stable LTS version like 14.x or 16.x
 
       - name: Set Node.js options
         run: export NODE_OPTIONS=--openssl-legacy-provider
