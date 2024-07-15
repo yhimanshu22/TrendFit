@@ -1,3 +1,8 @@
+permissions:
+  checks: write
+  contents: read
+  pull-requests: write
+  
 name: Deploy to Firebase Hosting on merge
 
 on:
