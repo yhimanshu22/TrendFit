@@ -27,9 +27,6 @@ jobs:
       - name: Build Next.js application
         run: yarn run build
 
-      - name: Upgrade Firebase CLI
-        run: npm install -g firebase-tools@latest
-
       - name: Deploy to Firebase Hosting
         uses: FirebaseExtended/action-hosting-deploy@latest
         with:
